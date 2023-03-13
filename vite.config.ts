@@ -5,11 +5,11 @@ import path from "path"
 const __dirname = "./"
 export default defineConfig({
   plugins: [vue()],
-  base: './',
   resolve: {
     alias: [
       { find: '@', replacement: path.resolve(__dirname, 'src')},
       { find: '@mocks', replacement: path.resolve(__dirname, '__mocks__')}
     ]
-  }
+  },
+  base:"./"
 })
